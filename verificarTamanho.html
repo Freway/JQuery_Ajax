@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Verifica tamanho tela</title>
+		<script language="JavaScript">
+			function VerificaPagina()
+			{
+				setInterval(MudaCor, 1000);
+				var texto = "Você está usando: "+navigator.appVersion+" usando uma tela de: "+screen.width+"x"+screen.height;
+				alert(texto);
+			}
+			
+			function MudaCor()
+			{
+				if(document.body.style.backgroundcColor == "white")
+				{
+					document.body.style.backgroundColor ="blue";
+				}
+				else
+				{
+					document.body.style.backgroundColor ="white";
+				}
+			}
+		</script>
+	</head>
+	<body onload="VerificaPagina()">
+		<p>Apenas um exemplo para o onload e setInterval</p>
+	</body>
+</html>
