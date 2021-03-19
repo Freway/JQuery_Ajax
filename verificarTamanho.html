@@ -2,13 +2,16 @@
 	<head>
 		<title>Verifica tamanho tela</title>
 		<script language="JavaScript">
+			//Função de verificação de tela
 			function VerificaPagina()
 			{
+				//Seta intervalo mpara mudança da cor de fundo
 				//setInterval(MudaCor, 1000);
-				var texto = "Você está usando: "+navigator.appVersion+" usando uma tela de: "+screen.width+"x"+screen.height;
+				//Verifica versão do navegador(navigator.appVersion) e tamanho de tela(screen.width e screen.height)
+				var texto = "Você está usando: "+navigator.appVersion+" usando uma tela de: "+screen.width+"x"+screen.height;				
 				alert(texto);
 			}
-			
+			//Função de mudança da cor do background
 			/*function MudaCor()
 			{
 				if(document.body.style.backgroundcColor == "white")
@@ -22,6 +25,7 @@
 			}*/
 		</script>
 	</head>
+	//Chama a função no carregamento da página
 	<body onload="VerificaPagina()">
 		<p>Apenas um exemplo para o onload e setInterval</p>
 	</body>
